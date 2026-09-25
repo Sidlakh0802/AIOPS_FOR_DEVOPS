@@ -107,6 +107,8 @@ If everything shows `[PASS]` — you're ready for Day 1.
 # Module 1 — Docker Error Explainer
 
 Paste a Docker error, get a plain-English explanation and fix. Your first LLM-powered tool.
+<img width="3420" height="2214" alt="image" src="https://github.com/user-attachments/assets/124a57e1-a08b-49b1-8563-0103fdb09b9d" />
+
 
 One file: [`GenAI.py`](GenAI.py)
 
@@ -129,11 +131,13 @@ Paste an error, press Enter twice. Try any of these:
 ```
 docker: Error response from daemon: Bind for 0.0.0.0:3000 failed: port is already allocated.
 ```
+<img width="3420" height="2214" alt="image" src="https://github.com/user-attachments/assets/6b2f9847-0a43-4625-afb3-1b1dc407697b" />
 
 **Image not found**
 ```
 docker: Error response from daemon: pull access denied for myapp, repository does not exist or may require 'docker login'
 ```
+<img width="3420" height="2214" alt="image" src="https://github.com/user-attachments/assets/8c867c85-bb76-4f0c-a7bf-c4a70e846f60" />
 
 **Permission denied**
 ```
@@ -150,9 +154,14 @@ docker: Got permission denied while trying to connect to the Docker daemon socke
 
 Next: **[Module 2 — Docker Troubleshooter Agent](../module-2/)**
 
+
 # Module 2 — Docker Troubleshooter Agent
 
 In Module 1, you built a chatbot — it reads text and responds. Now you build an **agent** — it decides what actions to take, runs them, reads the results, and keeps going until it has an answer.
+
+<img width="3420" height="2214" alt="image" src="https://github.com/user-attachments/assets/d1563d47-9355-4945-bf16-2120071b857d" />
+
+
 
 ## What You'll Learn
 
@@ -201,10 +210,14 @@ python3 module-2/agent.py
 
 Ask it:
 - "Why is broken-app crashing?"
-- "What containers are running?"
-- "Show me the logs for broken-app"
+<img width="3420" height="2214" alt="image" src="https://github.com/user-attachments/assets/63469a68-3c39-4474-9360-3cfa05ba3b47" />
 
-Watch it decide which tools to call on its own.
+- "What containers are running?"
+<img width="3420" height="2214" alt="image" src="https://github.com/user-attachments/assets/7c6140e1-403c-44aa-941b-efee3e27a93a" />
+
+- "Show me the logs for broken-app"
+<img width="3420" height="2214" alt="image" src="https://github.com/user-attachments/assets/3fef40e3-2c2f-41e6-940f-b2de2330214e" />
+
 
 Clean up when done:
 
@@ -215,6 +228,8 @@ docker rm -f broken-app
 ## Experiment
 
 - Add a 4th tool — maybe `stop_container(name)` or `restart_container(name)`
+<img width="3420" height="2214" alt="image" src="https://github.com/user-attachments/assets/ba0cc532-d9c3-4058-885e-e8513d0a4191" />
+
 - Run multiple broken containers and ask "which containers have problems?"
 - Look at the agent's reasoning — it prints what it's thinking before each tool call
 
@@ -332,11 +347,20 @@ python3 module-3/agent.py
 Try these:
 
 - "What pods are running in my cluster?"
+<img width="3420" height="2214" alt="image" src="https://github.com/user-attachments/assets/2c275659-f129-4f2e-8d2e-8f20c0797a95" />
+
 - "Why is broken-pod crashing?"
+<img width="3420" height="2214" alt="image" src="https://github.com/user-attachments/assets/59a1cbe7-db2a-46de-9e92-52e26b08a353" />
 - "Show me the events in the default namespace"
+<img width="3420" height="2214" alt="image" src="https://github.com/user-attachments/assets/7570ce26-4640-4639-8f6d-cd0a2f2b1298" />
+
 - "What Docker containers are running?"
 - "Why is broken-container failing?"
+<img width="3420" height="2214" alt="image" src="https://github.com/user-attachments/assets/cc7e8cdf-995e-4e90-bf93-bcdb0f408505" />
+
 - "What's broken across Docker and Kubernetes?"
+<img width="3420" height="2214" alt="image" src="https://github.com/user-attachments/assets/34b0f81d-fecb-473f-b563-ab1abe70a1b2" />
+
 
 Watch it pick K8s tools when you ask about pods, Docker tools when you ask about containers, and both when you ask about everything.
 
@@ -348,6 +372,11 @@ docker rm -f broken-container
 ```
 
 ## Try It — Part 2: The MCP Server
+
+<img width="3420" height="2214" alt="image" src="https://github.com/user-attachments/assets/82cd70f2-1ecc-4c2b-8d7c-2560f280fdfe" />
+<img width="3420" height="2214" alt="image" src="https://github.com/user-attachments/assets/88e20951-38d5-4b90-8b87-5e42ec540360" />
+<img width="3420" height="2214" alt="image" src="https://github.com/user-attachments/assets/a9b504b4-5c2a-43a8-b8cc-29fe73704d34" />
+
 
 ### Step 1: Install FastMCP
 
