@@ -1,6 +1,6 @@
 """
 Docker Troubleshooter Agent — an AI agent that diagnoses Docker issues on its own.
-Run: python3 module-2/agent.py
+
 """
 
 import subprocess
