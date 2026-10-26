@@ -1,6 +1,5 @@
 """
 Docker Error Explainer — paste a Docker error, get a human-readable fix.
-Run: python3 module-1/explainer.py
 """
 
 import ollama
