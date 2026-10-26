@@ -482,6 +482,3 @@ Why this matters:
 - Deploy multiple broken pods in different namespaces and ask the agent to find them all
 - Ask Claude Desktop to "restart the broken pod" — what happens? (It can't, because we didn't give it a restart tool. That's coming in Module 5.)
 
----
-
-Next: **[Module 4 — AIOps Demystified](../module-4/)**
